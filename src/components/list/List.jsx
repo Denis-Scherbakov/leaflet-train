@@ -1,4 +1,5 @@
 import { Menu } from "antd";
+import styles from "./list.module.css";
 
 export function List() {
   const items = [
@@ -7,7 +8,7 @@ export function List() {
   ];
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Menu items={items} />
     </div>
   );
