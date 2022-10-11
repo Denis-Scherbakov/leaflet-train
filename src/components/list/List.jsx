@@ -10,6 +10,7 @@ export function List() {
 
   return (
     <Rnd
+      style={{ position: "relative" }}
       className={styles.wrapper}
       disableDragging={true}
       enableResizing={{
