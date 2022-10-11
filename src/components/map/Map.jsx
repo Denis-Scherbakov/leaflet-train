@@ -1,14 +1,14 @@
 import React from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import RoutineMachine from "../routineMachine/RoutineMachine";
-import styles from "./map.module.css";
+import store from "../../redux/store";
 
 export const Map = (props) => {
+  console.log(store.getState());
   return (
     <MapContainer
       doubleClickZoom={false}
       id="mapId"
-      className={styles.map}
       zoom={14}
       center={[51.505, -0.09]}
       style={{ width: "78vw", height: "100vh" }}
