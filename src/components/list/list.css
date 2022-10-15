@@ -1,0 +1,19 @@
+.wrapper {
+  position: relative;
+  min-width: 300px;
+}
+
+.test .ant-menu-item {
+  width: 800px;
+  height: 400px;
+}
+
+.ant-menu-vertical > .ant-menu-item {
+  height: 400px;
+}
+
+li.ant-menu-item {
+  height: 400px;
+}
+
+@menu-item-height: 80px;

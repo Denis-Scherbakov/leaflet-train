@@ -1,11 +1,11 @@
+import { ListItem } from "../list-item/List-item";
 import { Menu } from "antd";
-import styles from "./list.module.css";
 import { Rnd } from "react-rnd";
+import styles from "./list.css";
 
 export function List() {
   const items = [
-    { label: "item 1", key: "item-1" }, // remember to pass the key prop
-    { label: "item 2", key: "item-2" }, // which is required
+    { label: <ListItem />, key: "item-1" }, // remember to pass the key prop
   ];
 
   return (
@@ -24,7 +24,7 @@ export function List() {
         topLeft: false,
       }}
     >
-      <Menu items={items} />
+      <Menu className="test" items={items}></Menu>
     </Rnd>
   );
 }
