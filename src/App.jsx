@@ -1,7 +1,7 @@
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import { DeliveryModule } from "./components";
-import "./App.css";
+import "./App.less";
 
 function App() {
   return (

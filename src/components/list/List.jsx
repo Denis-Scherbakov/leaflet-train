@@ -10,7 +10,7 @@ export function List() {
 
   return (
     <Rnd
-      style={{ position: "relative" }}
+      style={{ position: "relative", with: "500px" }}
       className={styles.wrapper}
       disableDragging={true}
       enableResizing={{
@@ -24,7 +24,7 @@ export function List() {
         topLeft: false,
       }}
     >
-      <Menu className="test" items={items}></Menu>
+      <Menu id="test" items={items}></Menu>
     </Rnd>
   );
 }
