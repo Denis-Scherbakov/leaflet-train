@@ -9,7 +9,6 @@ export function List() {
 
   const items = listItems.map((item) => {
     const path = item.path.split(" ");
-    console.log(path[0]);
     return {
       label: <ListItem listItem={item} load={path[0]} unload={path[2]} />,
       key: item.id,

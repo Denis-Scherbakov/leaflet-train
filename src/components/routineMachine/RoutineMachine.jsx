@@ -2,12 +2,9 @@ import L from "leaflet";
 import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
 
-const createRoutineMachineLayer = (props) => {
+const createRoutineMachineLayer = ({ coordinates }) => {
   const instance = L.Routing.control({
-    waypoints: [L.latLng(51.505, -0.09), L.latLng(51.605, -0.09)],
-    // createMarker: function () {
-    //   return null;
-    // },
+    waypoints: [L.latLng(coordinates.start), L.latLng(coordinates.end)],
     lineOptions: {
       styles: [{ color: "#6FA1EC", weight: 4 }],
     },
