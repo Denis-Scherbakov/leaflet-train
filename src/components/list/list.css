@@ -1,3 +1,13 @@
+#test {
+  min-width: 430px;
+}
+
 #test > li {
   min-height: 130px;
+}
+
+#menuWrapper {
+  height: 100vh;
+  overflow-x: scroll;
+  background-color: aqua;
 }

@@ -14,7 +14,10 @@ export const Map = () => {
       id="mapId"
       zoom={14}
       center={coordinates.centerMap}
-      style={{ width: "100%", height: "100vh" }}
+      style={{
+        width: "100%",
+        height: "100vh",
+      }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
