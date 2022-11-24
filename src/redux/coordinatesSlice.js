@@ -13,9 +13,17 @@ export const coordinatesSlice = createSlice({
     incrementByAmounts: (state, action) => {
       state.value += action.payload;
     },
+    setNewCoordinates: (state, action) => {
+      console.log("action", action);
+      return {
+        centerMap: action.payload.load,
+        start: action.payload.load,
+        end: action.payload.unload,
+      };
+    },
   },
 });
 
-export const { incrementByAmounts } = coordinatesSlice.actions;
+export const { setNewCoordinates } = coordinatesSlice.actions;
 
 export default coordinatesSlice.reducer;
