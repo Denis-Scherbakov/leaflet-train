@@ -14,7 +14,6 @@ export const coordinatesSlice = createSlice({
       state.value += action.payload;
     },
     setNewCoordinates: (state, action) => {
-      console.log("action", action);
       return {
         centerMap: action.payload.load,
         start: action.payload.load,

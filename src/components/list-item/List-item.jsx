@@ -3,7 +3,7 @@ import styles from "./list-item.module.css";
 
 export function ListItem({ listItem, load, unload, handleListClick }) {
   const handleSelectCoordinates = (e, type) => {
-    console.log(e, type, listItem.id);
+    console.log("ASD", e, type, listItem.id);
     //добавть сюда диспатч экшнов для изменения погрузки/разгрузки и изменения отображения и расчета путей на карте
   };
   return (

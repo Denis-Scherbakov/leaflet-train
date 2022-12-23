@@ -1,20 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer } from "react-leaflet";
 import RoutineMachine from "../routineMachine/RoutineMachine";
-import store from "../../redux/store";
 import { useSelector } from "react-redux";
 import { ChangeView } from "./changeView";
 
-export const Map = (props) => {
+export const Map = () => {
   const coordinates = useSelector((state) => state.coordinates);
-  console.log("coordinates", coordinates);
   const rMachine = useRef();
 
-  console.log("state", store.getState());
   const [mapCoordinates, setMapCoordinates] = useState(coordinates);
 
   useEffect(() => {
-    console.log("mapCoordinates", mapCoordinates);
     setMapCoordinates([coordinates.start, coordinates.end]);
   }, [coordinates]);
 
@@ -29,7 +25,7 @@ export const Map = (props) => {
     <MapContainer
       doubleClickZoom={false}
       id="mapId"
-      zoom={14}
+      zoom={12}
       center={mapCoordinates.centerMap}
       style={{
         width: "100%",

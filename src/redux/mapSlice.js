@@ -56,19 +56,7 @@ let initialState = [
 export const mapSlice = createSlice({
   name: "map",
   initialState,
-  reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
-    },
-  },
+  reducers: {},
 });
-
-export const { increment, decrement, incrementByAmount } = mapSlice.actions;
 
 export default mapSlice.reducer;

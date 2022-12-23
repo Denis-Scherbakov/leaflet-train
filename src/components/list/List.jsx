@@ -34,7 +34,7 @@ export function List() {
     <Rnd
       style={{
         position: "relative",
-        "border-right": "3px outset lightgrey",
+        borderRight: "3px outset lightgrey",
       }}
       className={styles.wrapper}
       disableDragging={true}
